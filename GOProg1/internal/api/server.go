@@ -38,7 +38,8 @@ func StartServer() {
 
 	r.GET("/myTemplate", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "myTemplate.tmpl", gin.H{
-			"title": "MyTemplate website", "array": []string{"Колбаса", "Сыр", "Хлеб"},
+			"title": "MyTemplate website",
+			"array": []string{"Колбаса", "Сыр", "Хлеб"},
 		})
 	})
 
